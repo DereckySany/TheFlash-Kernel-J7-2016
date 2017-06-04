@@ -1,0 +1,9 @@
++ init.supersu.rc
++ sbin/launch_daemonsu.sh
++ su
+* file_contexts 0000_file_contexts
+* fstab.goldfish 0001_fstab.goldfish
+* fstab.samsungexynos7870 0002_fstab.samsungexynos7870
+* init.environ.rc 0003_init.environ.rc
+* init.rc 0004_init.rc
+* sepolicy 0005_sepolicy

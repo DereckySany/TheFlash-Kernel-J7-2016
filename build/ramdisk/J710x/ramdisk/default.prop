@@ -1,15 +1,16 @@
 #
 # ADDITIONAL_DEFAULT_PROPERTIES
 #
-telephony.lteOnCdmaDevice=0
 rild.libpath=/system/lib/libsec-ril.so
 rild.libpath2=/system/lib/libsec-ril-dsds.so
+telephony.lteOnCdmaDevice=0
 persist.security.ams.enforcing=3
-ro.secure=1
+ro.secure=0
 ro.allow.mock.location=0
-ro.debuggable=0
+ro.debuggable=1
 ro.adb.secure=1
-persist.sys.usb.config=mtp
+persist.sys.usb.config=mtp,adb
+persist.service.adb.enable=1
 ro.zygote=zygote32
 dalvik.vm.image-dex2oat-Xms=64m
 dalvik.vm.image-dex2oat-Xmx=64m
@@ -17,9 +18,15 @@ dalvik.vm.dex2oat-Xms=64m
 dalvik.vm.dex2oat-Xmx=512m
 ro.dalvik.vm.native.bridge=0
 debug.atrace.tags.enableflags=0
+wlan.wfd.hdcp=disable
+ro.config.tima=0
+ro.config.dmverity=false
+ro.sec.fle.encryption=false
+ro.securestorage.support=false
+
 #
 # BOOTIMAGE_BUILD_PROPERTIES
 #
-ro.bootimage.build.date=Wed Apr 12 15:03:17 KST 2017
-ro.bootimage.build.date.utc=1491976997
-ro.bootimage.build.fingerprint=samsung/j7xeltexx/j7xelte:6.0.1/MMB29K/J710FXXU3AQD4:user/test-keys
+ro.bootimage.build.date=Sat Dec 17 01:58:12 KST 2016
+ro.bootimage.build.date.utc=1481907492
+ro.bootimage.build.fingerprint=samsung/a5y17ltexx/a5y17lte:6.0.1/MMB29K/A520FXXU1APLB:user/test-keys
