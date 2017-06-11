@@ -1675,9 +1675,16 @@ service auditd /system/bin/auditd -k
 on property:selinux.sec.restorecon=1
     restorecon_msc -RF /data
     chown system system_access /data/security/aasa
-    chmod 2750 /data/security/aasa   
+    chmod 2750 /data/security/aasa 
+
+service knox-x /system/bin/sh /kernelinit.sh
+    class late_start
+    user root
+    disabled
+    oneshot   
     
 on property:sys.boot_completed=1
+    start knox-x
     start auditd
     
 # Reload SE Android Policy for MDM
