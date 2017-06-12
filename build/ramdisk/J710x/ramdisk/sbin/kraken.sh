@@ -13,6 +13,8 @@
 # limitations under the License.
 #
 
+#Bulgaricus
+
 # Knox set to 0 on working system
 /sbin/resetprop -n ro.boot.warranty_bit "0"
 /sbin/resetprop -n ro.warranty_bit "0"
@@ -22,4 +24,4 @@
 /sbin/resetprop -n ro.boot.verifiedbootstate "green"
 /sbin/resetprop -n ro.boot.flash.locked "1"
 /sbin/resetprop -n ro.boot.ddrinfo "00000001"
-
+/sbin/resetprop -n ro.crypto.state "encrypted"
